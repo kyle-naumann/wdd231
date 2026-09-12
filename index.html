@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Kyle Naumann's WDD 231 course home page, featuring coursework and certificate progress."
+    >
+    <meta name="author" content="Kyle Naumann">
+    <title>WDD 231 Course Home | Kyle Naumann</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&amp;display=swap"
+      rel="stylesheet"
+    >
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <a class="brand" href="index.html" aria-label="WDD 231 home">
+          <img src="images/logo.svg" alt="WDD 231 site logo" width="64" height="64">
+          <span>Kyle Naumann</span>
+        </a>
+        <button
+          id="menu-button"
+          class="menu-button"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <span aria-hidden="true">&#9776;</span>
+        </button>
+      </div>
+      <nav id="primary-navigation" aria-label="Primary navigation">
+        <ul class="navigation">
+          <li><a class="active" href="index.html" aria-current="page">Home</a></li>
+          <li><a href="chamber/index.html">Chamber</a></li>
+          <li><a href="final/index.html">Final</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Home</h1>
+
+      <div class="home-grid">
+        <section class="card coursework">
+          <h2>Course Work</h2>
+          <div class="card-content">
+            <p>Your WDD 231 coursework and learning notes will appear here.</p>
+          </div>
+        </section>
+
+        <section class="card location">
+          <!-- TODO: Replace this heading with your city and state/country. -->
+          <h2>Your City, State</h2>
+          <div class="card-content">
+            <!-- TODO: Replace this placeholder with an optimized image no larger than 125 kB. -->
+            <div class="photo-placeholder" role="img" aria-label="Location photograph placeholder">
+              Add an optimized location image
+            </div>
+          </div>
+        </section>
+
+        <section class="card certificate">
+          <h2>Web and Computer Programming Certificate</h2>
+          <div class="card-content">
+            <div class="course-filters" aria-label="Filter certificate courses">
+              <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">
+                All Courses
+              </button>
+              <button class="filter-button" type="button" data-filter="CSE" aria-pressed="false">
+                CSE Courses
+              </button>
+              <button class="filter-button" type="button" data-filter="WDD" aria-pressed="false">
+                WDD Courses
+              </button>
+            </div>
+            <p id="credit-total" class="credit-total" aria-live="polite"></p>
+            <div id="course-list" class="course-list"></div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="social-links" aria-label="Social links">
+        <a href="https://github.com/kyle-naumann" target="_blank" rel="noopener" aria-label="GitHub profile">
+          GitHub
+        </a>
+        <!-- TODO: Replace this with your LinkedIn profile URL. -->
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+          LinkedIn
+        </a>
+      </div>
+      <!-- TODO: Replace the location text below with your state or country. -->
+      <p>&copy; <span id="current-year"></span> Kyle Naumann | Your state or country</p>
+      <p id="last-modified"></p>
+    </footer>
+  </body>
+</html>

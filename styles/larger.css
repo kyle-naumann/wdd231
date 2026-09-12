@@ -1,0 +1,49 @@
+@media screen and (min-width: 44rem) {
+  .header-content {
+    padding-block: 1rem;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navigation li {
+    flex: 0 1 14rem;
+  }
+
+  .navigation a {
+    border-bottom: 0.3rem solid transparent;
+    border-left: 0;
+  }
+
+  .navigation a:hover,
+  .navigation a:focus-visible,
+  .navigation a.active {
+    border-bottom-color: var(--accent);
+  }
+
+  main {
+    padding-block: 1.5rem 3rem;
+  }
+
+  .home-grid {
+    grid-template-columns: minmax(0, 3fr) minmax(15rem, 2fr);
+  }
+
+  .certificate {
+    grid-column: 1 / -1;
+  }
+
+  .course-filters {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .course-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
