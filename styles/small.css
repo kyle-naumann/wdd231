@@ -160,16 +160,12 @@ h1 {
   padding: 1rem;
 }
 
-.photo-placeholder {
-  display: grid;
-  min-height: 13rem;
-  padding: 1rem;
-  place-items: center;
-  color: var(--muted);
-  border: 2px dashed var(--border);
+.profile-photo {
+  width: min(100%, 20rem);
+  margin: 0 auto;
+  border: 1px solid var(--border);
   border-radius: 0.35rem;
-  background: var(--surface-alt);
-  text-align: center;
+  object-fit: cover;
 }
 
 .course-filters {
